@@ -9,12 +9,10 @@
 <body>
     <div class="certificate-box">
         <h1>✓ Certificate Verified</h1>
-        <!-- <p>This is to certify that</p> -->
-        <h2>{{ certificate.student_name }}</h2>
-        <!-- <p>has successfully completed the course</p> -->
-        <h3>{{ certificate.course_name }}</h3>
-        <p><strong>Student ID:</strong> {{ certificate.student_id }}</p>
-        <p><strong>Issue Date:</strong> {{ certificate.issue_date }}</p>
+        <h2>{{ certificate['student_name'] }}</h2>
+        <h3>{{ certificate['course_name'] }}</h3>
+        <p><strong>Student ID:</strong> {{ certificate['student_id'] }}</p>
+        <p><strong>Issue Date:</strong> {{ certificate['issue_date'] }}</p>
 
         <a href="{{ url_for('index') }}" class="back-link">Verify Another Certificate</a>
     </div>
